@@ -59,6 +59,14 @@ namespace livres.Controllers
         {
             Author a = AuthorsDb.GetById(id);
             return View(a);
+            
+            
+            //try using LINQ method to find element with matching id: 
+            
+            //SingleOrDefault is a LINQ method that returns a single element from a sequence, or a default value if no element is found
+            // Author a = AuthorsDb.SingleOrDefault(s => s.Id == id);
+            // return View(a)
+          
         }
 
 
