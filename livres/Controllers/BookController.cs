@@ -48,7 +48,7 @@ namespace livres.Controllers
             }
             else
             {
-                //not sure why form is passed as param
+                
                 return View(form);
                 //or View("controller", "actionMethod)"
             }
